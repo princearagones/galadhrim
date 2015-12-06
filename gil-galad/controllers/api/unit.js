@@ -1,4 +1,4 @@
-var logger = require(__dirname + '/../../lib/logger'),
+var logger = require(__dirname + '/../../../lib/logger'),
     db = require(__dirname + '/../../lib/mysql');
 
 exports.findOne = function (req, res, next) {
