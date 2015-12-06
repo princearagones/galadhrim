@@ -1,5 +1,5 @@
 var logger = require(__dirname + '/../../../lib/logger'),
-    db = require(__dirname + '/../lib/mysql');
+    db = require(__dirname + '/../../lib/mysql');
 
 exports.findOne = function(req, res, next) {
 	db.query("SELECT * FROM plan_of_study WHERE _id = ?", [req.params.id], function(err, rows){		
