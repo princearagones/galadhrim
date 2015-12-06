@@ -44,6 +44,9 @@ var unit = require(__dirname + '/../gil-galad/controllers/api/unit');
  	router.route('/api/curriculum-course/:id')
  		.get(curriculum_course.findCourses)
 
+ 	router.route('/api/unit/')
+		.get(unit.find);
+
 	router.route('/api/units/:id')
 		.get(unit.findOne);
 
